@@ -1,0 +1,20 @@
+Let completeInformation = name + “ “ + “\(myAge)”
+print(completeInformation)
+Let completeInformation2 = “My name is: \(name)”
+Let completeInformation2 = “My name is: \(myAge)”
+
+//How to change a string to a int data type with 
+//Example : let currentYear = “2022”
+Let currentYearInt = Int(2022)
+
+//Using optional binding with if statement and else statement to get the value of a property
+ 
+ func printFullName(){
+     print(“Hafiz Ajani”)  
+}
+
+Func generateGreeting(anyName age: Int, name: String = “Hafiz Ajani”)  ->  String {
+Let newAge = age + 1
+Let customGreeting = “My age is \(newAge) and my name is \(name)”
+Return customGreeting
+}
