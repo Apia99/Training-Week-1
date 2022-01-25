@@ -1,0 +1,48 @@
+Book: The Swift Programming Language
+1. Read: Control Transfer Statement - page 131
+2. Read: API Availability - page 140
+3. Read: Recursive Enumerations - page 187
+4. Read: Subscript - page 233
+5. Read: Convenience initializer - page 260
+6. Read: Deinitialization- page 286
+7. Read: Optional Chaining - page 290
+8. Read: Converting Erros to Optional Values - page 311
+9. Read: Downcasting - page 316
+10. Read. Delegation - page 344
+10. Read: Optional Protocol Requirements - page 361
+11. Read: Automatic Reference Counting - page 405
+
+## Questionnaire:
+What is the difference between var and let? Var is used for the interchangeable of a value related to a property - where as a let is used to make the value of specific property Constance meaning that the value can't be changed but used in many places.
+
+What is an optional? It's a data type that can return a nil or a set value related to a property. 
+
+What is optional chaining vs optional binding?  Optional binding operator is to check if an optional contains a value or not , and optional chain operator provides a way to simplify access to values through connected objects such as reference or functions
+  
+What are the different ways to unwrap an optional? How do they work? Are they safe? they are a numbers of ways too unwrap an optional. One is using if-else block that make sure that the Optional value is not nil which is quite safe and doesn't return error. The second is using "forced unwrapping" whereby this methods doesn't care about the outcome of the value either nil or not nil and will give an unexpected result which is not safe. The third is Optional binding is similar to using an if-else block. The only subtle difference is that if the optional value is not nil, the unwrapped value is assigned to a new constant and further operations are performed on the constant.You can do this using the if-let statement. The fourth is You use optional chaining in places where you're dealing with multiple optional values at once. You use it to access and mutate or assign far-fetched attributes whose value depends on other constraints.
+For example, we get our food from plants, which in turn get their food from sunlight and water.
+
+What is a closure? Closures are self-contained blocks of functionality that can be passed around and used in your code.
+
+What is the difference between a class and a struct? In Swift, structs are value types whereas classes are reference types. When you copy a struct, you end up with two unique copies of the data. When you copy a class, you end up with two references to one instance of the data. 
+
+What is the syntax '??' do?
+
+What is a tuple?  A tuple type is a comma-separated list of types, enclosed in parentheses. You can use a tuple type as the return type of a function to enable the function to return a single tuple containing multiple values.
+
+What is Any vs AnyObject? The Any type can contain values from all other types. Any can be used as the concrete type for an instance of any of the following types: A class, structure, or enumeration, A metatype, such as Int.self, A tuple with any types of components
+
+What is a protocol? A protocol defines a blueprint of methods, properties, and other requirements that suit a particular task or piece of functionality.
+
+What is Delegation - Delegation is used for everything from handling table view events using UITableViewDelegate, the main purpose of delegate is to allow an object to communicate back to its owner.
+
+
+Read these articles
+https://developer.apple.com/documentation/swift/choosing_between_structures_and_classes
+https://fluffy.es/reference-vs-value-type/
+
+
+Read about Naming properties, func, protocols, best practice
+Explain UIKit - What is? UIKit is the framework that we use most often when developing iOS applications. It defines the core components of an iOS application, from labels and buttons to table views and navigation controllers.
+
+- Basic App Using MVC with json file embedded. (Login -> tabbar -> List of activity master, detail
