@@ -1,17 +1,26 @@
 import Foundation
 
 func twoStrings(s1: String, s2: String) -> String {
-    var s1Dictionary = [String: Int]()
-    var s2Dictionary = [String: Int]()
-    
-    s1.forEach { s1Dictionary[String($0), default: 0 ] += 1}
-    s2.forEach { s2Dictionary[String($0), default: 0 ] += 1}
-    
-    for (key, value) in s1Dictionary {
-        if let s2Value = s2Dictionary[key] {
-            return "YES"
+
+    var s1_dict: [String: Int] = [:]
+    var s2_dict: [String: Int] = [:]
+    var new_str = ""
+
+    _ = s1.map { s1_dict[String($0), default: 0] += 1 }
+    _ = s2.map { s2_dict[String($0), default: 0] += 1}
+
+    print(s1_dict, s2_dict)
+
+    for (k, v) in s1_dict {
+
+        if s2_dict[k] != nil {
+            let num_char = (v + s2_dict[k]!) / 2
+            for _ in 0..<num_char {
+                new_str += k
+            }
         }
+
     }
-    
-    return "NO"
+
+    return new_str != "" ? "YES" : "NO"
 }
